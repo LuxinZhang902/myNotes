@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')), # api/urls.py will take care of all routers starts from ' '
     path('', TemplateView.as_view(template_name='index.html')),
+
 ]
