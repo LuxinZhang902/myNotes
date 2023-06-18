@@ -47,7 +47,6 @@ def getRoutes(request):
 
     return Response(routes)
 
-
 @api_view(['GET'])
 def getNotes(request):
     notes = Note.objects.all().order_by('-updated') # get the notes
